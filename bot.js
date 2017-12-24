@@ -4,6 +4,7 @@ const client = new Discord.Client();
 client.on('message', message => {
 	if( message.author.bot )
 		return;
+	var input = message.content;
 	if( input == "hi!" ){
 		message.channel.send("<@" + message.author.id + "> hi!").catch(console.error);
 		return;
