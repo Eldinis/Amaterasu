@@ -189,7 +189,7 @@ function randomProfileColor(){
 
 function Player(id){
 	this.id = id;
-	this.cash = 10;
+	this.cash = 484;
 	this.gain = function(n){
 		this.cash += n;
 	}
