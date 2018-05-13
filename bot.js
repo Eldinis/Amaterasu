@@ -782,7 +782,10 @@ client.on('message', message => {
 });
 
 client.on('ready', () => {
-	//client.user.setUsername("Amaterasu 天照").catch(console.error);
+	if(client.user.username != "Hades 黄泉"){
+		//client.user.setUsername("Amaterasu 天照").catch(console.error);
+		client.user.setUsername("Hades 黄泉").catch(console.error);
+	}
 	console.log( client.user.username + ' [' + client.user.id + '] est en ligne!');
 });
 
